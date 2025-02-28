@@ -1,4 +1,4 @@
-package pixios.backend;
+package yassinetakfa.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
