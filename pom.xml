@@ -8,11 +8,11 @@
 		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>yassineTakfa</groupId>
-	<artifactId>backend</artifactId>
+	<groupId>takfaYassine</groupId>
+	<artifactId>backendProjet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backend</name>
-	<description>backend</description>
+	<name>backendProjet</name>
+	<description>backendProjet</description>
 	<url/>
 	<licenses>
 		<license/>

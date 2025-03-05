@@ -1,13 +1,13 @@
-package yassinetakfa.backend;
+package takfayassine.backendprojet;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackendApplication {
+public class BackendProjetApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BackendApplication.class, args);
+		SpringApplication.run(BackendProjetApplication.class, args);
 	}
 
 }

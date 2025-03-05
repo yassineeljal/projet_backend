@@ -1,10 +1,10 @@
-package yassinetakfa.backend;
+package takfayassine.backendprojet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackendApplicationTests {
+class BackendProjetApplicationTests {
 
 	@Test
 	void contextLoads() {
