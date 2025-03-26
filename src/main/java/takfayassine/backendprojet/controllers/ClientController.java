@@ -21,10 +21,17 @@ public class ClientController {
     ClientService clientService;
 
 
+
     @PostMapping("/createUser")
     public Client createUser(@RequestBody Client client){
+        client.setPassword(clientService.registerUser(client.getPassword()));
         clientRepository.save(client);
         return client;
+    }
+
+    @PostMapping("/login/{username}/{pwd}")
+    public boolean login(@PathVariable String username, @PathVariable String pwd){
+        return clientService.login(username, pwd);
     }
 
     @GetMapping("/get1")

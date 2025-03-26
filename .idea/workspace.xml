@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc93c61-021f-4811-8631-4a133b92a750" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/models/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/models/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/models/Liked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/ClientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
     "Spring Boot.BackendProjetApplication.executor": "Run",
     "git-widget-placeholder": "yassine",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/2387923/.m2/repository/ch/qos/logback/logback-classic/1.5.16",
+    "last_opened_file_path": "C:/Users/2387923/OneDrive - Cégep Marie-Victorin/Desktop/fullstackWebApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,11 +99,23 @@
       <option name="presentableId" value="Default" />
       <updated>1742391717987</updated>
       <workItem from="1742391719124" duration="3887000" />
+      <workItem from="1742995586088" duration="5048000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
