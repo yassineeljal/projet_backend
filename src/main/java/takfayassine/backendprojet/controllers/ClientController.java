@@ -34,6 +34,12 @@ public class ClientController {
         return clientService.login(username, pwd);
     }
 
+
+    @PostMapping("/profile/{username}/{pwd}")
+    public List<String> profile(@PathVariable String username, @PathVariable String pwd){
+        return clientService.getClientInfo(username);
+    }
+
     @GetMapping("/get1")
     public List<ClientDTO> getAllDTO(){
         return clientService.getAllClient();

@@ -30,6 +30,18 @@ public class ClientService {
         return passwordEncoder.matches(frontEndPWD, user.getPassword());
     }
 
+    public List<String> getClientInfo(String username){
+        List<String> infos = new ArrayList<>();
+        Client user = clientRepository.findClientByUsername(username);
+        infos.add(user.getUsername());
+        infos.add(user.getFirstname());
+        infos.add(user.getLastname());
+        return infos;
+
+
+    }
+
+
 
     public List<ClientDTO> getAllClient(){
         List<Client> list = clientRepository.findAll();
