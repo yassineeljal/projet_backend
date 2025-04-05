@@ -1,8 +1,10 @@
 package takfayassine.backendprojet.services;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import takfayassine.backendprojet.models.Album;
 import takfayassine.backendprojet.models.Client;
 import takfayassine.backendprojet.models.ClientDTO;
+import takfayassine.backendprojet.models.Image;
 import takfayassine.backendprojet.repositories.ClientRepository;
 
 import java.util.ArrayList;
@@ -57,6 +59,7 @@ public class ClientService {
         }
         return listDTO;
     }
+
 
 
 

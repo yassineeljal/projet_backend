@@ -2,9 +2,12 @@ package takfayassine.backendprojet.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import takfayassine.backendprojet.models.Album;
 import takfayassine.backendprojet.models.Client;
 import takfayassine.backendprojet.models.ClientDTO;
+import takfayassine.backendprojet.models.Image;
 import takfayassine.backendprojet.repositories.ClientRepository;
+import takfayassine.backendprojet.repositories.ImageRepository;
 import takfayassine.backendprojet.services.ClientService;
 
 import java.util.List;
@@ -20,6 +23,10 @@ public class ClientController {
     @Autowired
     ClientService clientService;
 
+    @Autowired
+    ImageRepository imageRepository;
+
+
 
 
     @PostMapping("/createUser")
@@ -28,6 +35,18 @@ public class ClientController {
         clientRepository.save(client);
         return client;
     }
+
+    @PostMapping("/addImageAlbum/{username}/{pwd}/{img}")
+    public boolean addImage(@PathVariable String username, @PathVariable String pwd, @PathVariable Image img){
+        boolean result = false;
+        if (clientRepository.findClientByUsername(username) != null){
+
+            imageRepository.save(img);
+            result = true;
+        }
+        return result;
+    }
+
 
     @PostMapping("/login/{username}/{pwd}")
     public boolean login(@PathVariable String username, @PathVariable String pwd){
