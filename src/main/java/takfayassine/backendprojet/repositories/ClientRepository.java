@@ -7,9 +7,6 @@ import takfayassine.backendprojet.models.Client;
 
 
 public interface ClientRepository extends JpaRepository<Client,Long> {
-    @Query("select count (*) from Client c where c.firstname='toto'")
-    public int getClientNumber();
-
     public Client findClientByUsername(String username);
 
 

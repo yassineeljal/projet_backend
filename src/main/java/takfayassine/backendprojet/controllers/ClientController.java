@@ -40,7 +40,6 @@ public class ClientController {
     public boolean addImage(@PathVariable String username, @PathVariable String pwd, @PathVariable Image img){
         boolean result = false;
         if (clientRepository.findClientByUsername(username) != null){
-
             imageRepository.save(img);
             result = true;
         }
