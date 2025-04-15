@@ -9,7 +9,6 @@ import takfayassine.backendprojet.models.Client;
 
 public interface AlbumRepository extends JpaRepository<Album,Long> {
 
-    public Album findAlbumByName(String name);
 
 
 }
