@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc93c61-021f-4811-8631-4a133b92a750" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/ImageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/AlbumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/AlbumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/models/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/models/Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/repositories/AlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/repositories/AlbumRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/AlbumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/repositories/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/repositories/ImageRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BackendProjetApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.BackendProjetApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -131,6 +134,8 @@
       <workItem from="1743798449931" duration="11000" />
       <workItem from="1743809269539" duration="9022000" />
       <workItem from="1744681908452" duration="7487000" />
+      <workItem from="1744689980559" duration="288000" />
+      <workItem from="1744762729443" duration="10461000" />
     </task>
     <servers />
   </component>

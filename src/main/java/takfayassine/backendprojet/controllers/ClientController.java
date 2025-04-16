@@ -36,15 +36,7 @@ public class ClientController {
         return client;
     }
 
-    @PostMapping("/addImageAlbum/{username}/{pwd}/{img}")
-    public boolean addImage(@PathVariable String username, @PathVariable String pwd, @PathVariable Image img){
-        boolean result = false;
-        if (clientRepository.findClientByUsername(username) != null){
-            imageRepository.save(img);
-            result = true;
-        }
-        return result;
-    }
+
 
 
     @PostMapping("/login/{username}/{pwd}")
