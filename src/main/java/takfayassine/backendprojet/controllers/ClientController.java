@@ -40,7 +40,7 @@ public class ClientController {
 
 
     @PostMapping("/login/{username}/{pwd}")
-    public boolean login(@PathVariable String username, @PathVariable String pwd){
+    public boolean login(@PathVariable("username") String username, @PathVariable("pwd") String pwd){
         return clientService.login(username, pwd);
     }
 
