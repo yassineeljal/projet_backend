@@ -31,7 +31,7 @@ public class ImageController {
     }
     @PostMapping("/getImageInAlbum/{selectedAlbum}")
     public List<Image> getImageInAlbum(@PathVariable String selectedAlbum) {
-        return imageRepository.findImagesByAlbum(albumRepository.findByAlbumName(selectedAlbum));
+        return imageRepository.findImagesByAlbum(albumRepository.findAlbumByName(selectedAlbum));
 
     }
 }

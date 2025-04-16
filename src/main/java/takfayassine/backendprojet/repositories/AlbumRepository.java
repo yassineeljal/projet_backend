@@ -12,11 +12,12 @@ import java.util.List;
 public interface AlbumRepository extends JpaRepository<Album,Long> {
 
     Album findByAlbumId(Long albumId);
-    Album findByAlbumName(String albumName);
+
+    Album findAlbumByName(String name);
 
 
 
     public List<Album> findAlbumByAlbumId(Long albumId);
 
-    List<Album> findAlbumByName(String name);
+    List<Album> findAlbumsByName(String name);
 }
