@@ -2,7 +2,6 @@ package takfayassine.backendprojet.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 import takfayassine.backendprojet.models.*;
 import takfayassine.backendprojet.repositories.ClientRepository;
 import takfayassine.backendprojet.repositories.LikedRepository;

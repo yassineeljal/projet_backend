@@ -3,10 +3,7 @@ package takfayassine.backendprojet.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import takfayassine.backendprojet.models.Album;
-import takfayassine.backendprojet.models.Client;
-import takfayassine.backendprojet.models.ClientDTO;
-import takfayassine.backendprojet.repositories.AlbumRepository;
-import takfayassine.backendprojet.repositories.ClientRepository;
+
 import takfayassine.backendprojet.services.AlbumService;
 
 import java.util.List;
