@@ -1,11 +1,11 @@
 package takfayassine.backendprojet.services;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import takfayassine.backendprojet.models.Album;
-import takfayassine.backendprojet.models.Client;
-import takfayassine.backendprojet.models.ClientDTO;
-import takfayassine.backendprojet.models.Image;
+import org.springframework.web.bind.annotation.RequestBody;
+import takfayassine.backendprojet.models.*;
 import takfayassine.backendprojet.repositories.ClientRepository;
+import takfayassine.backendprojet.repositories.LikedRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,9 @@ public class ClientService {
 
 
     private final ClientRepository clientRepository;
+
+    @Autowired
+    private LikedRepository likedRepository;
 
     public ClientService(ClientRepository _clientRepository){
         this.clientRepository = _clientRepository;
@@ -32,36 +35,15 @@ public class ClientService {
         return passwordEncoder.matches(frontEndPWD, user.getPassword());
     }
 
-    public List<String> getClientInfo(String username){
-        List<String> infos = new ArrayList<>();
-        Client user = clientRepository.findClientByUsername(username);
-        infos.add(user.getUsername());
-        infos.add(user.getFirstname());
-        infos.add(user.getLastname());
-        return infos;
 
-
+    public Client createUser(Client client){
+        client.setPassword(registerUser(client.getPassword()));
+        Liked liked = new Liked();
+        liked.setClient(client);
+        clientRepository.save(client);
+        likedRepository.save(liked);
+        return client;
     }
-
-
-
-    public List<ClientDTO> getAllClient(){
-        List<Client> list = clientRepository.findAll();
-        List<ClientDTO> listDTO = new ArrayList<>();
-
-        for (Client c: list){
-            ClientDTO cdto = new ClientDTO();
-            cdto.setEmail(c.getEmail());
-            cdto.setFirstname(c.getFirstname());
-            cdto.setLastname(c.getLastname());
-
-            listDTO.add(cdto);
-        }
-        return listDTO;
-    }
-
-
-
 
 
 }

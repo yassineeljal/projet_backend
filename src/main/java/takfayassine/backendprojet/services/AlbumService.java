@@ -17,6 +17,13 @@ public class AlbumService {
     @Autowired
     private ClientRepository clientRepository;
 
+    public boolean createAlbum(String username, String albumName){
+        Album album = new Album();
+        album.setName(albumName);
+        album.setClient(clientRepository.findClientByUsername(username));
+        albumRepository.save(album);
+        return true;
+    }
 
     public List<Album> getAllAlbums(String username) {
         List<Album> albums = new ArrayList<>();

@@ -7,6 +7,7 @@ import takfayassine.backendprojet.repositories.AlbumRepository;
 import takfayassine.backendprojet.repositories.ClientRepository;
 import takfayassine.backendprojet.repositories.ImageRepository;
 import takfayassine.backendprojet.repositories.LikedRepository;
+import takfayassine.backendprojet.services.ImageService;
 
 import java.util.List;
 
@@ -14,50 +15,25 @@ import java.util.List;
 @RequestMapping("/image")
 @CrossOrigin
 public class ImageController {
-
     @Autowired
-    private ImageRepository imageRepository;
-
-    @Autowired
-    private AlbumRepository albumRepository;
-
-    @Autowired
-    private ClientRepository clientRepository;
-    @Autowired
-    private LikedRepository likedRepository;
+    private ImageService imageService;
 
     @PostMapping("/addImageToAlbum")
     public boolean addImageToAlbum(@RequestBody FetchImageAlbum userData) {
-        String url = userData.getUrl();
-        String id = userData.getId();
-        Image image = new Image();
-        image.setUrl(url);
-        image.setAlbum(albumRepository.findAlbumByAlbumId(Long.valueOf(id)));
-        imageRepository.save(image);
-        return true;
-
+        return imageService.addImageToAlbum(userData);
     }
 
     @PostMapping("/addImageToLiked")
     public boolean addImageToLiked(@RequestBody FetchImageLiked userData) {
-        String url = userData.getUrl();
-        String username = userData.getUsername();
-        Image image = new Image();
-        image.setUrl(url);
-        image.setLiked(likedRepository.findLikedByClient(clientRepository.findClientByUsername(username)));
-        imageRepository.save(image);
-        return true;
-
+        return imageService.addImageToLiked(userData);
     }
     @PostMapping("/getImageInAlbum/{selectedAlbum}")
     public List<Image> getImageInAlbum(@PathVariable String selectedAlbum) {
-        return imageRepository.findImagesByAlbum(albumRepository.findAlbumByName(selectedAlbum));
-
+        return imageService.getImageInAlbum(selectedAlbum);
     }
 
     @PostMapping("/getImageInLiked/{username}")
     public List<Image> getImageInLiked(@PathVariable String username) {
-        return imageRepository.findImagesByLiked(likedRepository.findLikedByClient(clientRepository.findClientByUsername(username)));
-
+        return imageService.getImageInLiked(username);
     }
 }

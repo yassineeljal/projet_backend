@@ -16,11 +16,6 @@ import java.util.List;
 @CrossOrigin
 public class AlbumController {
 
-    @Autowired
-    AlbumRepository albumRepository;
-
-    @Autowired
-    ClientRepository clientRepository;
 
     @Autowired
     AlbumService albumService;
@@ -28,26 +23,14 @@ public class AlbumController {
 
     @PostMapping("/createAlbum/{username}/{albumName}")
     public boolean createAlbum(@PathVariable String username, @PathVariable String albumName){
-        Album album = new Album();
-        album.setName(albumName);
-        album.setClient(clientRepository.findClientByUsername(username));
-        albumRepository.save(album);
-        return true;
-
-    }
+        return albumService.createAlbum(username,albumName);
+    };
 
     @PostMapping("/getAllAlbum/{username}")
     public List<Album> getAllAlbum(@PathVariable String username) {
         return albumService.getAllAlbums(username);
     }
 
-
-
-//
-//    @GetMapping("/getAllAlbum")
-//    public List<Album> getAllAlbum(){
-//        return albumRepository.findAll();
-//    }
 
 
 }
