@@ -10,4 +10,20 @@ public class Liked {
 
     @OneToOne
     private Client client;
+
+    public Long getLikedId() {
+        return likedId;
+    }
+
+    public void setLikedId(Long likedId) {
+        this.likedId = likedId;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
 }

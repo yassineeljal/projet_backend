@@ -2,12 +2,10 @@ package takfayassine.backendprojet.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import takfayassine.backendprojet.models.Album;
-import takfayassine.backendprojet.models.Client;
-import takfayassine.backendprojet.models.ClientDTO;
-import takfayassine.backendprojet.models.Image;
+import takfayassine.backendprojet.models.*;
 import takfayassine.backendprojet.repositories.ClientRepository;
 import takfayassine.backendprojet.repositories.ImageRepository;
+import takfayassine.backendprojet.repositories.LikedRepository;
 import takfayassine.backendprojet.services.ClientService;
 
 import java.util.List;
@@ -25,14 +23,17 @@ public class ClientController {
 
     @Autowired
     ImageRepository imageRepository;
-
-
+    @Autowired
+    private LikedRepository likedRepository;
 
 
     @PostMapping("/createUser")
     public Client createUser(@RequestBody Client client){
         client.setPassword(clientService.registerUser(client.getPassword()));
+        Liked liked = new Liked();
+        liked.setClient(client);
         clientRepository.save(client);
+        likedRepository.save(liked);
         return client;
     }
 

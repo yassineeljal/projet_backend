@@ -1,9 +1,8 @@
 package takfayassine.backendprojet.models;
 
-public class Bidon {
-
+public class FetchImageLiked {
     String url;
-    String id;
+    String username;
 
     public String getUrl() {
         return url;
@@ -13,11 +12,11 @@ public class Bidon {
         this.url = url;
     }
 
-    public String getId() {
-        return id;
+    public String getUsername() {
+        return username;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
