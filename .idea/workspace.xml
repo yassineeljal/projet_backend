@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc93c61-021f-4811-8631-4a133b92a750" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/tests/testLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/tests/testRegisterUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/services/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/AlbumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/AlbumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/takfayassine/backendprojet/controllers/ClientController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +61,6 @@
   "keyToString": {
     "Application.BCrypt.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.testAddImageToAlbum.executor": "Run",
-    "JUnit.testAddImageToAlbum.testAddImageToAlbum.executor": "Run",
-    "JUnit.testAddImageToLiked.testAddImageToLiked.executor": "Run",
-    "JUnit.testCreateAlbum.testCreateAlbum.executor": "Run",
-    "JUnit.testCreateUser.testCreateUser.executor": "Run",
-    "JUnit.testGetAllAlbums.executor": "Run",
-    "JUnit.testGetAllAlbums.testGetAllAlbums.executor": "Run",
-    "JUnit.testGetImageInAlbum.testGetImageInAlbum.executor": "Run",
-    "JUnit.testGetImageInLiked.testGetImageInLiked.executor": "Run",
-    "JUnit.testLogin.testLoginForm.executor": "Run",
-    "JUnit.testRegisterUser.executor": "Run",
-    "JUnit.testRegisterUser.testRegisterForm.executor": "Run",
-    "JUnit.testSuccess.sampleSuccessTest.executor": "Run",
     "Maven.backendProjet [clean].executor": "Run",
     "Maven.backendProjet [compile].executor": "Run",
     "Maven.backendProjet [validate].executor": "Run",
@@ -91,11 +73,11 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.BackendProjetApplication.executor": "Run",
+    "Spring Boot.BackendProjetApplication.executor": "Profiler#1",
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/djerr/OneDrive - Cégep Marie-Victorin/Desktop/Session 4/ApplicationWeb (Reda Hamza)/projet_backend",
+    "last_opened_file_path": "C:/Users/2387923/OneDrive - Cégep Marie-Victorin/Desktop/projet_backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,7 +86,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.71954024",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "database.query.execution",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -118,86 +100,7 @@
       <recent name="takfayassine.backendprojet.repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendProjetApplication">
-    <configuration name="testCreateAlbum.testCreateAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backendProjet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="takfayassine.backendprojet.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="takfayassine.backendprojet.tests" />
-      <option name="MAIN_CLASS_NAME" value="takfayassine.backendprojet.tests.testCreateAlbum" />
-      <option name="METHOD_NAME" value="testCreateAlbum" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGetAllAlbums" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backendProjet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="takfayassine.backendprojet.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="takfayassine.backendprojet.tests" />
-      <option name="MAIN_CLASS_NAME" value="takfayassine.backendprojet.tests.testGetAllAlbums" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGetAllAlbums.testGetAllAlbums" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backendProjet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="takfayassine.backendprojet.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="takfayassine.backendprojet.tests" />
-      <option name="MAIN_CLASS_NAME" value="takfayassine.backendprojet.tests.testGetAllAlbums" />
-      <option name="METHOD_NAME" value="testGetAllAlbums" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testLogin.testLoginForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backendProjet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="takfayassine.backendprojet.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="takfayassine.backendprojet.tests" />
-      <option name="MAIN_CLASS_NAME" value="takfayassine.backendprojet.tests.testLogin" />
-      <option name="METHOD_NAME" value="testLoginForm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testRegisterUser.testRegisterForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backendProjet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="takfayassine.backendprojet.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="takfayassine.backendprojet.tests" />
-      <option name="MAIN_CLASS_NAME" value="takfayassine.backendprojet.tests.testRegisterUser" />
-      <option name="METHOD_NAME" value="testRegisterForm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="BackendProjetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="backendProjet" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="takfayassine.backendprojet.BackendProjetApplication" />
@@ -205,21 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.testGetAllAlbums" />
-        <item itemvalue="JUnit.testGetAllAlbums.testGetAllAlbums" />
-        <item itemvalue="JUnit.testCreateAlbum.testCreateAlbum" />
-        <item itemvalue="JUnit.testLogin.testLoginForm" />
-        <item itemvalue="JUnit.testRegisterUser.testRegisterForm" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -242,9 +136,6 @@
       <workItem from="1744762729443" duration="10461000" />
       <workItem from="1744810237593" duration="7534000" />
       <workItem from="1745341961190" duration="9217000" />
-      <workItem from="1746581825786" duration="5000" />
-      <workItem from="1746581840708" duration="15434000" />
-      <workItem from="1746623556209" duration="4735000" />
     </task>
     <servers />
   </component>
