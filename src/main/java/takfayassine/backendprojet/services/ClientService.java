@@ -14,15 +14,12 @@ public class ClientService {
 
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-
-    private final ClientRepository clientRepository;
+    @Autowired
+    private  ClientRepository clientRepository;
 
     @Autowired
     private LikedRepository likedRepository;
 
-    public ClientService(ClientRepository _clientRepository){
-        this.clientRepository = _clientRepository;
-    }
 
 
     public String registerUser(String password) {
